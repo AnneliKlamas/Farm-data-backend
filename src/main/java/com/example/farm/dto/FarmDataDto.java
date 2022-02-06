@@ -1,5 +1,6 @@
 package com.example.farm.dto;
 
+import com.example.farm.enums.MetricType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,6 +12,6 @@ public class FarmDataDto {
     private Long id;
     private String farm;
     private Date date;
-    private String metricType;
+    private MetricType metricType;
     private Double metricValue;
 }
