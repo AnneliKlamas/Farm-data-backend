@@ -41,7 +41,7 @@ public class FarmDataService {
         InputStream inputStream = file.getInputStream();
         CsvParserSettings settings = new CsvParserSettings();
         settings.setHeaderExtractionEnabled(true);
-        settings.setMaxColumns(60000000);
+        settings.setMaxColumns(60000);
         CsvParser parser = new CsvParser(settings);
         try {
             List<Record> parseAllRecords = parser.parseAllRecords(inputStream);
